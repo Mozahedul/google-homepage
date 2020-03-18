@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <head>
+        <title>Google Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .google-page {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .google-align {
+                width: 500px;
+            }
+
+            .google-input{
+                border: none;
+                font-size: 16px;
+                color: rgb(60, 60, 60);
+                outline: none;
+                margin: 0;
+                padding: 15px 20px;
+                box-shadow: 2px 2px 8px 2px rgba(125, 125, 125, 0.5);
+                border-radius: 40px;
+                width: 100%;
+            }
+            .google-input::placeholder {
+                font-size: 16px;
+            }
+
+            .bottom-btn {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .bottom-btn input {
+                outline: none;
+                border: none;
+                appearance: none;
+                padding: 12px 20px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                cursor: pointer;
+                color: rgb(70, 70, 70);
+            }
+
+            .bottom-btn input:hover {
+                border: 1px solid lightgray;
+            }
+            .input-right {
+                margin-left: 10px;
+            }
+            .google-page img {
+                display: block;
+                margin: 0 auto 30px;
+            }
+
+            /* navigatio style starts */
+            .navigation-bar {
+                display: flex;
+                 flex-flow: row wrap; 
+                justify-content: space-between;
+                padding-top: 20px;
+                width: 100%;
+            } 
+
+            .navigation-bar ul { 
+                list-style: none;
+            }
+
+            .navigation-bar ul li {
+                display: inline-block;
+            }
+
+            .navigation-bar ul li a {
+                text-decoration: none;
+                display: block;
+                padding: 8px 12px;
+                font-size: 14px;
+                color: rgb(77, 77, 77);
+            }
+
+            .navigation-bar ul li a:hover {
+                text-decoration: underline;
+            }
+
+            .nav-left {
+                 margin-left: 30px;
+            }
+
+            .nav-right {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 30px;
+            }  
+
+            .nav-right button {
+                outline: none;
+                border: none;
+                padding: 8px 12px;
+                background-color: #0066cc;
+                border-radius: 3px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            .nav-right button:hover {
+                box-shadow: 0 0 1px 1px rgb(0, 77, 153);
+            }
+            .nav-top {
+                position: fixed;
+                top: 0;
+            }
+
+            .nav-footer {
+                background-color: lightgray;
+                padding: 5px;
+                position: fixed;
+                bottom: 0;
+            }
+
+            .nav-footer ul li a {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- Top Navigation -->
+        <div class="navigation-bar nav-top">
+            <nav class="nav-left">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li> 
+                </ul>
+                <div>
+                    <button>Sign in</button>
+                </div>
+                
+            </nav>
+        </div>
+        <div class="google-page">
+            <div class="google-align">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" title="Google">
+            <form action="#">
+                <div>
+                <input class="google-input" type="search" placeholder="Search Google or type a URL">
+            </div>
+            <div class="bottom-btn">
+                <input type="button" value="Google Search">
+                <input type="button" value="I'm Feeling Lucky" class="input-right">
+            </div>
+            </form> 
+        </div>
+       </div>
+
+       <div class="navigation-bar nav-footer">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works?</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li> 
+                <li><a href="#">Settings</a></li> 
+            </ul>
+            
+        </nav>
+    </div>
+    </body>
+</html>
